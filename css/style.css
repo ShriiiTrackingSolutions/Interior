@@ -335,9 +335,9 @@ color: var(--HoverBrown);
 /* statistics section start */
 
 
- /* **************************
- ***Working experience Page***
- *****************************/
+ /* ****************
+ ***Services Page***
+ *******************/
 
  /* Working experience section start */
  .WorkingSince{
@@ -464,12 +464,145 @@ border: none;
   .Testimonials p{
     width: 90%;
   }
-
-
-
-
   /* Testimonials section end */
 
+
+  
+ /*****************
+ ***Contact Page***
+ ******************/
+
+.contact_socialmedia .container>.row{
+justify-content: flex-end;
+}
+
+.contactCard_icons i{
+display: flex;
+flex-wrap: wrap;
+height: 64px;
+width: 64px;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+color: var(--lightBrown);
+}
+
+
+.contact_socialmedia .h1{
+    color: var(--lightBrown);
+    margin-bottom: 40px;
+}
+
+.contact_socialmedia a{
+    text-decoration: none;
+    color: var(--lightBrown);
+    font-size: 18px;
+}
+.contact_socialmedia  .col-auto a span{
+color: var(--HoverBrown);
+font-size: 20px;
+font-weight: 600;
+padding-right: 5px;
+}
+
+.contact_socialmedia a:hover{
+    color: var(--HoverBrown);
+}
+
+.contact_socialmedia  .contactCardWrapper{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+gap: 40px;
+}
+.contact_socialmedia .Shedule{
+    text-align: center;
+}
+
+.sheduleParrent{
+    align-items: center;
+}
+
+.contact_socialmedia .Shedule span{
+    font-size: 18px;
+    color: #c42d2d;
+    font-weight: 600;
+}
+
+.contact_socialmedia .Shedule i.fa-business-time{
+font-size: 70px;
+color: var(--lightBrown);
+margin-bottom: 40px;
+}
+
+.contact_socialmedia .socialIcons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact_socialmedia .socialIcons a{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 3rem;
+height: 3rem;
+font-size: 1.5rem;
+text-align: center;
+color: #848475;
+border: 2px solid #5c5b4d;
+border-radius: 50px;
+}
+.contact_socialmedia .socialIcons a:hover{
+    color: var(--HoverBrown);
+}
+
+.contact_socialmedia .secH{
+    margin-top: 40px;
+}
+
+.GirlIsCalling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_socialmedia img{
+    width: 100%;
+    max-width: 445px;
+   }
+
+   /* reach us section start */
+.ReachUs{
+    position: relative;
+}
+.ReachUs img{
+    width: 100%;
+}
+
+.ReachUs .container {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+/* reach us section End */
+
+/* map section start */
+.ContactMap .container{
+border: 10px solid var(--lightBG);
+border-radius: 8px;
+margin-top: -12%;
+position: relative;
+z-index: 1;
+}
+.ContactMap {
+    margin-bottom: 50px;
+}
+/* map section End */
 
 
 
@@ -534,6 +667,16 @@ color: #5c5b4d;
 
 
 
+
+
+
+@media (min-width: 1400px) { 
+    .h1 {
+        font-weight: 700;
+        font-size: min(calc(15px + 2vw), 69px);
+        line-height: 1.1;
+    }
+ }
 
 @media (max-width: 1199.98px) {
     .section1 .container{
@@ -626,6 +769,9 @@ color: #5c5b4d;
   .Testimonials .row {
    gap: 40px; 
 }
+.GirlIsCalling{
+    margin-bottom: 40px;
+}
   }
 
 
@@ -678,7 +824,35 @@ color: #5c5b4d;
     .WorkingSince,.ServicesCards,.Testimonials{
         text-align: center;
     }
+    .sheduleParrent {
+        row-gap: 40px;
+    }
+
+    .contactCard1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact_socialmedia .secH {
+       text-align: center;
+    }
+    .contact_socialmedia .socialIcons{
+        justify-content: center;
+    }
+    .contact_socialmedia .Shedule i.fa-business-time{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .contact_socialmedia h2.fsP{
+        font-size: 24px;
+    }
+   
+    .ContactMap iframe{
+        height: 400px;
+    }
    }
+
+  
 
   @media (max-width:  575.98px){
     .offcanvas-start {
@@ -702,6 +876,10 @@ color: #5c5b4d;
     }
     .section7 .bdr3{
         border-color: transparent;
+    }
+
+    .GirlIsCalling img{
+       width: 70%;
     }
    
  }
