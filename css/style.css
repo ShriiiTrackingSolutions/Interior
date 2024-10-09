@@ -597,6 +597,7 @@ border: 10px solid var(--lightBG);
 border-radius: 8px;
 margin-top: -12%;
 position: relative;
+
 z-index: 1;
 }
 .ContactMap {
@@ -622,7 +623,7 @@ footer.backgr{
     border-radius: 50px;
 }
 .logopart a.icon:hover,.footer2 a.fsP:hover{
-    color: #5c5b4d !important;
+    color: #5c5b4d !important; 
 }
 
 a.icon i{
