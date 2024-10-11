@@ -830,14 +830,20 @@ a.icon i{
     padding: 0;
     list-style: none;
 }
-.footer2 ul a{
-    color: #ffffff;
+.footer2 ul a,.footer2 .contactFooter a{
+    color: var(--HoverBrown);
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer2 ul a:hover,.footer2 .contactFooter a:hover{
+    color: #000000;
 }
 .footer2 p.fsP{
     font-size: calc(12px + 0.390625vw)
 }
 .footer2 .navbar-brand {
     width: 80%;
+    padding-top: 0;
 }
 .footer2 a.fsP{
     color: #848475;
@@ -845,15 +851,15 @@ a.icon i{
 .footer2 h2.fsP {
     color: #5c5b4d;
 }
-.footer2 .col-md-4{
-    padding-top: 20px;
+.footer2 address{
+    margin-bottom: 0;
 }
-.footer2 .col-md-4 a:not(a.fsP){
-    display: inline-block;
-    margin-top: 5px;
-}
-.footer2 .col-md-4 a:not(a.fsP):hover{
-color: #5c5b4d;
+
+.contactFooter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
 
@@ -981,6 +987,15 @@ color: #5c5b4d;
 .uniqueDesign .container>.row{
     row-gap: 40px;
 }
+
+.footer2 .col-md-3{
+    width: 48%;
+}
+.footer2 .col-auto{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
   }
 
 
@@ -1058,6 +1073,25 @@ color: #5c5b4d;
    
     .ContactMap iframe{
         height: 400px;
+    }
+
+    .footer2 .col-md-3{
+        width: 100%;
+        text-align: center;
+    }
+    .footer2 .col-auto{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer2 .navbar-brand {
+       display: table;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .footer2>.row{
+        row-gap: 30px;
     }
    }
 
