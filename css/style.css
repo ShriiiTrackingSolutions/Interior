@@ -663,6 +663,7 @@ z-index: 1;
 }
 
 /* HTML: <img class="inverted-radius" src="" alt=""> */
+
 .inverted-radius {
     --r: 30px; /* the radius */
     --s: 50px; /* the size of the corner*/
@@ -746,8 +747,59 @@ background-color: #ffffff75;
     text-overflow: ellipsis;
 }
 
-
 /* Product Gallery Section end  */
+
+
+
+
+/* spotlight gallery  */
+
+.spotlight-group{
+    row-gap: 70px;
+}
+
+.spotlight-group>.spotlight {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 15px 15px 40px 40px;
+    color: var(--HoverBrown);
+}
+
+.spotlight-group>.spotlight:hover{
+background-color: #ffffff75;
+}
+
+.spotlight-group h2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotlight-group p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotlight img {
+    height: auto;
+    max-height: unset;
+    object-fit: unset;
+}
+
+.spotlight img, .image {
+    width: 100%;
+    height: auto;
+    max-width: unset;
+    margin: 0;
+    content-visibility: auto;
+}
+
+
 
 
 footer.backgr{
